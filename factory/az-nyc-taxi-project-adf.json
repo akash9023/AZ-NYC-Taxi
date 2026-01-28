@@ -1,0 +1,9 @@
+{
+	"name": "az-nyc-taxi-project-adf",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "cdf460a4-4828-40b6-941d-caa054349d4b",
+		"tenantId": "5defaa5b-6498-496d-970f-8497eb7f6b88"
+	}
+}

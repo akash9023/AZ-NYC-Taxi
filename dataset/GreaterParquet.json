@@ -1,0 +1,28 @@
+{
+	"name": "GreaterParquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "NYC_Source",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"month_greater": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "trip-data/green_tripdata_2023-@{dataset().month_greater}.parquet",
+					"type": "Expression"
+				}
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
